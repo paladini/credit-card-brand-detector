@@ -1,6 +1,6 @@
 {
   "name": "credit-card-brand-detector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Detects credit card brands/networks (Visa, Mastercard, Elo, etc.) with Luhn validation - supports 11 major brands including Brazilian cards",
   "main": "src/index.js",
   "files": [

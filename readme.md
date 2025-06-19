@@ -138,7 +138,7 @@ MIT License - see [LICENSE file](LICENSE).
 ## Links
 
 - **NPM Package**: [https://www.npmjs.com/package/credit-card-brand-detector](https://www.npmjs.com/package/credit-card-brand-detector)
-- **GitHub Repository**: [https://github.com/paladini/validador-de-cartoes-de-credito](https://github.com/paladini/validador-de-cartoes-de-credito)
+- **GitHub Repository**: [https://github.com/paladini/credit-card-brand-detector](https://github.com/paladini/credit-card-brand-detector)
 
 ## About
 
