@@ -1,0 +1,7 @@
+test/
+coverage/
+.git/
+.gitignore
+.github/
+*.test.js
+jest.config.js
