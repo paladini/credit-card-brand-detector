@@ -118,7 +118,7 @@ console.log(detectBrand('4869330000000001')); // 'Aura'
 
 ## License / Licença
 
-MIT License - see LICENSE file / Licença MIT - veja o arquivo LICENSE
+MIT License - see [LICENSE file](LICENSE).
 
 ## About
 
