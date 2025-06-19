@@ -1,0 +1,84 @@
+{
+  "name": "credit-card-brand-detector",
+  "version": "1.0.0",
+  "description": "Detects credit card brands/networks (Visa, Mastercard, Elo, etc.) with Luhn validation - supports 11 major brands including Brazilian cards",
+  "main": "src/index.js",
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "start": "node src/index.js",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "credit-card",
+    "cartao-credito",
+    "brand-detector",
+    "detectar-bandeira",
+    "descobrir-bandeira",
+    "discover-cc-brand",
+    "detect-credit-card-brand",
+    "detect-credit-card-network",
+    "detect-credit-card",
+    "credit-card-brand",
+    "credit-card-network",
+    "credit-card-detection",
+    "credit-card-validation",
+    "bandeira",
+    "network-detection",
+    "visa",
+    "mastercard",
+    "amex",
+    "american-express",
+    "discover",
+    "diners",
+    "jcb",
+    "hipercard",
+    "aura",
+    "elo",
+    "voyager",
+    "enroute",
+    "card-validation",
+    "luhn",
+    "brasil",
+    "brazil"
+  ],
+  "author": {
+    "name": "Fernando Paladini",
+    "email": "fnpaladini@gmail.com",
+    "url": "https://github.com/paladini"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paladini/credit-card-brand-detector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paladini/credit-card-brand-detector/issues"
+  },
+  "homepage": "https://github.com/paladini/credit-card-brand-detector#readme",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.test.js"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "html"
+    ]
+  }
+}
