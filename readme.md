@@ -119,3 +119,12 @@ console.log(detectBrand('4869330000000001')); // 'Aura'
 ## License / Licença
 
 MIT License - see LICENSE file / Licença MIT - veja o arquivo LICENSE
+
+## About
+
+Developed by Fernando Paladini, using Github Copilot for DIO bootcamp challenge.
+
+## References
+
+- [4devs.com.br](https://www.4devs.com.br/gerador_de_numero_cartao_credito)
+- [DIO Courses](https://www.dio.me/)
