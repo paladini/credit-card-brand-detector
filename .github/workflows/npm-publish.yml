@@ -63,7 +63,7 @@ jobs:
           # Version already on GH Packages (often still private): ensure public access.
           if printf '%s\n' "$out" | grep -qiE 'Cannot publish over existing version|EPUBLISHCONFLICT|E409'; then
             echo "Version already published; setting package access to public"
-            npm access public @paladini/credit-card-brand-detector
+            npm access set status=public @paladini/credit-card-brand-detector --registry=https://npm.pkg.github.com
             exit $?
           fi
           exit "$status"
