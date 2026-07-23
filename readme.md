@@ -1,6 +1,6 @@
 # Credit Card Brand Detector
 
-<a href="https://paladini.github.io/harness-score/guide/maturity-model#l0-unharnessed" title="Harness Score — AI coding harness maturity"><img alt="Harness Score L0 (Unharnessed): measures AI-assisted development harness maturity with harness-score" src="https://paladini.github.io/harness-score/maturity/badge-l0.svg" height="20"></a>
+<a href="https://paladini.io/harness-score/guide/maturity-model#l0-%C2%B7-unharnessed" title="Harness Score — AI coding harness maturity"><img alt="Harness Score L0 (Unharnessed): measures AI-assisted development harness maturity with harness-score" src="https://paladini.github.io/harness-score/maturity/badge-l0.svg" height="20"></a>
 [![npm version](https://badge.fury.io/js/credit-card-brand-detector.svg)](https://badge.fury.io/js/credit-card-brand-detector)
 [![npm downloads](https://img.shields.io/npm/dm/credit-card-brand-detector.svg)](https://www.npmjs.com/package/credit-card-brand-detector)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
