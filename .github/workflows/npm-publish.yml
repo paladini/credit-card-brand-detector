@@ -60,11 +60,12 @@ jobs:
           if [ "$status" -eq 0 ]; then
             exit 0
           fi
-          # Version already on GH Packages (often still private): ensure public access.
+          # Version already on GH Packages: treat as success (visibility is UI-only on GitHub).
           if printf '%s\n' "$out" | grep -qiE 'Cannot publish over existing version|EPUBLISHCONFLICT|E409'; then
-            echo "Version already published; setting package access to public"
-            npm access set status=public @paladini/credit-card-brand-detector --registry=https://npm.pkg.github.com
-            exit $?
+            echo "Version already published to GitHub Packages; nothing to do."
+            echo "If the package is still private, change visibility in GitHub UI:"
+            echo "  Package settings → Danger Zone → Change visibility → Public"
+            exit 0
           fi
           exit "$status"
         env:
