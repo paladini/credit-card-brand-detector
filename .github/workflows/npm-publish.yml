@@ -50,7 +50,22 @@ jobs:
       - run: npm ci
       - name: Publish to GitHub Packages as @paladini/credit-card-brand-detector
         run: |
+          set -euo pipefail
           npm pkg set name=@paladini/credit-card-brand-detector
-          npm publish --access public
+          set +e
+          out="$(npm publish --access public 2>&1)"
+          status=$?
+          set -e
+          printf '%s\n' "$out"
+          if [ "$status" -eq 0 ]; then
+            exit 0
+          fi
+          # Version already on GH Packages (often still private): ensure public access.
+          if printf '%s\n' "$out" | grep -qiE 'Cannot publish over existing version|EPUBLISHCONFLICT|E409'; then
+            echo "Version already published; setting package access to public"
+            npm access public @paladini/credit-card-brand-detector
+            exit $?
+          fi
+          exit "$status"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
